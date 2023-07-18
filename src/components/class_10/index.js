@@ -175,7 +175,7 @@ const TeenClass = () => {
 
     const header = destination[3];
 
-    for (let i = 4; i < destination.length; i++) {
+    for (let i = 5; i < destination.length; i++) {
       const row = destination[i];
       let student = {};
       for (let j = 0; j < row.length; j++) {
