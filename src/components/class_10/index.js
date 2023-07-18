@@ -99,69 +99,69 @@ const TeenClass = () => {
     const ws = workbook.addWorksheet("Sheet1");
     let columns = [
       { header: "STT", key: "STT", width: 8 },
-      { header: "Mã lớp", key: "ML", width: 8 },
+      { header: "Mã lớp", key: "Mã lớp", width: 8 },
       {
         header: "Mã học sinh",
-        key: "MHS",
+        key: "Mã học sinh",
         width: 15,
       },
-      { header: "Họ tên", key: "HT", width: 30 },
-      { header: "Ngày sinh", key: "NS", width: 15 },
-      { header: "Toán", key: "T", width: 10 },
-      { header: "Vật lý", key: "VL", width: 10 },
-      { header: "Hóa học", key: "HH", width: 10 },
-      { header: "Sinh học", key: "SH", width: 10 },
-      { header: "Tin học", key: "TH", width: 10 },
-      { header: "Ngữ văn", key: "NV", width: 10 },
-      { header: "Lịch sử", key: "LS", width: 10 },
-      { header: "Địa lí", key: "DL", width: 10 },
-      { header: "Ngoại ngữ 1", key: "NN1", width: 10 },
-      { header: "Công nghệ", key: "CN", width: 10 },
-      { header: "GD QP-AN", key: "GDQPAN", width: 10 },
-      { header: "Ngoại ngữ 2", key: "NN2", width: 10 },
-      { header: "Toán Pháp", key: "TP", width: 10 },
+      { header: "Họ tên", key: "Họ tên", width: 30 },
+      { header: "Ngày sinh", key: "Ngày sinh", width: 15 },
+      { header: "Toán", key: "Toán", width: 10 },
+      { header: "Vật lý", key: "Vật lý", width: 10 },
+      { header: "Hóa học", key: "Hóa học", width: 10 },
+      { header: "Sinh học", key: "Sinh học", width: 10 },
+      { header: "Tin học", key: "Tin học", width: 10 },
+      { header: "Ngữ văn", key: "Ngữ vănNV", width: 10 },
+      { header: "Lịch sử", key: "Lịch sử", width: 10 },
+      { header: "Địa lí", key: "Địa lí", width: 10 },
+      { header: "Ngoại ngữ 1", key: "Ngoại ngữ 1", width: 10 },
+      { header: "Công nghệ", key: "Công nghệ", width: 10 },
+      { header: "GD QP-AN", key: "GD QP-AN", width: 10 },
+      { header: "Ngoại ngữ 2", key: "Ngoại ngữ 2", width: 10 },
+      { header: "Toán Pháp", key: "Toán Pháp", width: 10 },
       {
         header: "Môn tự chọn song ngữ",
-        key: "MTCSN",
+        key: "Môn tự chọn song ngữ",
         width: 10,
       },
       //
-      { header: "Giáo dục thể chất", key: "GDTC", width: 10 },
+      { header: "Giáo dục thể chất", key: "Giáo dục thể chất", width: 10 },
       {
         header: "Hoạt động trải nghiệm",
-        key: "HDTN",
+        key: "Hoạt động trải nghiệm",
         width: 10,
       },
-      { header: "Giáo dục địa phương", key: "GDDP", width: 10 },
-      { header: "Mỹ thuật", key: "MT", width: 10 },
-      { header: "Âm nhạc", key: "AN", width: 10 },
+      { header: "Giáo dục địa phương", key: "Giáo dục địa phương", width: 10 },
+      { header: "Mỹ thuật", key: "Mỹ thuật", width: 10 },
+      { header: "Âm nhạc", key: "Âm nhạc", width: 10 },
       {
         header: "Tiếng dân tộc thiểu số",
-        key: "TDTTS",
+        key: "Tiếng dân tộc thiểu số",
         width: 10,
       },
       {
         header: "Giáo dục kinh tế và pháp luật",
-        key: "GDKTVPL",
+        key: "Giáo dục kinh tế và pháp luật",
         width: 10,
       },
       { header: "Kết quả rèn luyện", key: "Kết quả rèn luyện", width: 10 },
-      { header: "Kết quả học tập", key: "KQRL", width: 10 },
+      { header: "Kết quả học tập", key: "Kết quả học tập", width: 10 },
     ];
 
     if (isCN) {
       columns = [
         ...columns,
-        { header: "Danh hiệu cả năm", key: "DHCN", width: 10 },
+        { header: "Danh hiệu cả năm", key: "Danh hiệu cả năm", width: 10 },
         {
           header: "TS ngày nghỉ học cả năm",
-          key: "TSNNHCN",
+          key: "TS ngày nghỉ học cả năm",
           width: 10,
         },
-        { header: "Được lên lớp", key: "DLL", width: 10 },
+        { header: "Được lên lớp", key: "Được lên lớp", width: 10 },
         {
           header: "Kiểm tra lại, rèn luyện HK trong hè",
-          key: "KTLRLTH",
+          key: "Kiểm tra lại, rèn luyện HK trong hè",
           width: 10,
         },
       ];
@@ -175,7 +175,7 @@ const TeenClass = () => {
 
     const header = destination[3];
 
-    for (let i = 5; i < destination.length; i++) {
+    for (let i = 4; i < destination.length; i++) {
       const row = destination[i];
       let student = {};
       for (let j = 0; j < row.length; j++) {
@@ -189,10 +189,10 @@ const TeenClass = () => {
       let student = {};
       Object.assign(student, {
         STT: row[0],
-        ML: row[1],
-        MHS: row[2],
-        HT: row[3],
-        NS: row[4],
+        "Mã lớp": row[1],
+        "Mã học sinh": row[2],
+        "Họ tên": row[3],
+        "Ngày sinh": row[4],
       });
       studentSources.push(student);
     }
@@ -218,34 +218,34 @@ const TeenClass = () => {
       if (student) {
         return {
           ...st,
-          T: student["TOÁN"],
-          VL: student["VẬT LÝ"],
-          HH: student["HÓA HỌC"],
-          SH: student["SINH HỌC"],
-          TH: student["TIN HỌC"],
-          NV: student["NGỮ VĂN"],
-          LS: student["LỊCH SỬ"],
-          DL: student["ĐỊA LÝ"],
-          NN1: student["NGOẠI NGỮ"],
-          CN: student["CÔNG NGHỆ"],
-          GDQPAN: student["QP-AN"],
-          NN2: student["NGOẠI NGỮ 2"],
-          TP: student["TOAN PHÁP"],
-          MTCSN: student["MÔN TỰ CHỢN SONG NGỮ"],
-          GDTC: student["THỂ DỤC"],
-          HDTN: student["HOẠT ĐỘNG NGOÀI GIỜ LÊN LỚP"],
-          GDDP: student["GIÁO DỤC ĐỊA PHƯƠNG"],
-          MT: student["MỸ THUẬT"],
-          AN: student["ÂM NHẠC"],
-          TDTTS: student["TIẾNG DÂN TỘC THIỂU SỐ"],
-          GDKTVPL: student["GDCD"],
-          KQRL: student["HK"],
-          KQHT: student["HL"],
-          DHTD: student["TD"],
-          TSNNHCN: student["TS NGÀY NGHỈ HỌC CẢ NĂM"],
+          Toán: student["TOÁN"],
+          "Vật lý": student["VẬT LÝ"],
+          "Hóa học": student["HÓA HỌC"],
+          "Sinh học": student["SINH HỌC"],
+          "Tin học": student["TIN HỌC"],
+          "Ngữ văn": student["NGỮ VĂN"],
+          "Lịch sử": student["LỊCH SỬ"],
+          "Địa lí": student["ĐỊA LÝ"],
+          "Ngoại ngữ 1": student["NGOẠI NGỮ"],
+          "Công nghệ": student["CÔNG NGHỆ"],
+          "GD QP-AN": student["QP-AN"],
+          "Ngoại ngữ 2": student["NGOẠI NGỮ 2"],
+          "Toán Pháp": student["TOAN PHÁP"],
+          "Môn tự chọn song ngữ": student["MÔN TỰ CHỢN SONG NGỮ"],
+          "Giáo dục thể chất": student["THỂ DỤC"],
+          "Hoạt động trải nghiệm": student["HOẠT ĐỘNG NGOÀI GIỜ LÊN LỚP"],
+          "Giáo dục địa phương": student["GIÁO DỤC ĐỊA PHƯƠNG"],
+          "Mỹ thuật": student["MỸ THUẬT"],
+          "Âm nhạc": student["ÂM NHẠC"],
+          "Tiếng dân tộc thiểu số": student["TIẾNG DÂN TỘC THIỂU SỐ"],
+          "Giáo dục kinh tế và pháp luật": student["GDCD"],
+          "Kết quả rèn luyện": student["HK"],
+          "Kết quả học tập": student["HL"],
+          "Danh hiệu cả năm": student["TD"],
+          "TS ngày nghỉ học cả năm": student["TS NGÀY NGHỈ HỌC CẢ NĂM"],
 
-          DLL: student["ĐƯƠC LÊN LỚP"],
-          KTLRLTH: student["Điểm kiểm tra lại"],
+          "Được lên lớp": student["ĐƯƠC LÊN LỚP"],
+          "Kiểm tra lại, rèn luyện HK trong hè": "Điểm kiểm tra lại",
         };
       } else {
         window.alert(`Học sinh ${st["Họ tên"]} không có điểm`);
