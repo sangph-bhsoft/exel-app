@@ -112,7 +112,7 @@ const TeenClass = () => {
       { header: "Hóa học", key: "Hóa học", width: 10 },
       { header: "Sinh học", key: "Sinh học", width: 10 },
       { header: "Tin học", key: "Tin học", width: 10 },
-      { header: "Ngữ văn", key: "Ngữ vănNV", width: 10 },
+      { header: "Ngữ văn", key: "Ngữ văn", width: 10 },
       { header: "Lịch sử", key: "Lịch sử", width: 10 },
       { header: "Địa lí", key: "Địa lí", width: 10 },
       { header: "Ngoại ngữ 1", key: "Ngoại ngữ 1", width: 10 },
