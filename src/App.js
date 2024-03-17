@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import saveAs from "file-saver";
 import ExcelJS from "exceljs";
 import TeenClass from "./components/class_10";
+import NewVersion from "./components/new-version";
 
 function App() {
   const [source, setSource] = useState([]);
@@ -296,6 +297,8 @@ function App() {
       </div>
 
       <TeenClass />
+
+      <NewVersion />
     </div>
   );
 }
